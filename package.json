@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "homepage": "./",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -30,5 +31,11 @@
     "babel-plugin-import": "^1.11.0",
     "gh-pages-deploy": "^0.5.1",
     "react-app-rewired": "^2.1.1"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "build",
+    "prep": [
+      "build"
+    ]
   }
 }
