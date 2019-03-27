@@ -1,0 +1,8 @@
+name: Audio File Size Caclulator
+url: https://chriserin.github.io/audio-file-size-calculator-ant/
+banner: true
+description: |
+  This application was build using the Ant design system.  I wanted to see how easy it was to build when designed in sketch using the Ant design system and then translated to React using Ant design system components.
+technologies:
+  - React
+  - Ant Design System
