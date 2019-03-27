@@ -1,0 +1,98 @@
+.App {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+label {
+  min-width: 360px;
+}
+
+.input-label {
+  display: inline-block;
+  font-size: 20px;
+  min-width: 160px;
+  margin-right: 40px;
+  text-align: right;
+}
+
+.calculator-elements {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 400px;
+
+  .calculator-element {
+    display: flex;
+    min-width: 360px;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
+.ant-select {
+  width: 160px;
+}
+
+.input-section {
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+}
+
+.track-number .ant-input-number {
+  width: 160px;
+}
+
+.song-length .ant-input-number {
+  width: 58px;
+  margin-right: 2px;
+}
+
+.time-label {
+  margin-right: 16px;
+}
+
+.seperator {
+  display: flex;
+  width: 400px;
+  height: 1px;
+  border-bottom: 1px solid #979797;
+}
+
+h2.ant-typography.ant-typography {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+h3.ant-typography.ant-typography {
+  font-size: 20px;
+  text-align: right;
+  margin-top: 0px;
+}
+
+.total-size.ant-typography.ant-typography {
+  width: 160px;
+  text-align: left;
+}
