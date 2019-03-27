@@ -5,6 +5,9 @@ import { Typography, Select, InputNumber } from 'antd';
 const wordSizes = [16, 24, 32];
 const sampleRates = [44.1, 48, 88.2, 96, 192];
 
+const recalcFromState = ({ wordSize, sampleRate, tracks, hours, minutes }) =>
+  wordSize * sampleRate * 1000 * tracks * ((hours * 60 + minutes) * 60);
+
 class App extends Component {
   constructor() {
     super();
@@ -15,16 +18,14 @@ class App extends Component {
       tracks: 24,
       hours: 1,
       minutes: 20,
-      total: 0,
     };
+
+    this.state.total = recalcFromState(this.state);
   }
 
   recalc() {
-    const { wordSize, sampleRate, tracks, hours, minutes } = this.state;
-
     this.setState({
-      total:
-        wordSize * sampleRate * 1000 * tracks * ((hours * 60 + minutes) * 60),
+      total: recalcFromState(this.state),
     });
   }
 
